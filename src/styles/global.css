@@ -1,0 +1,5 @@
+.onchain-kit-scope {
+  @import '@coinbase/onchainkit/styles.css';
+}
+
+/* Any other global styles you want */ 

@@ -13,12 +13,13 @@ export default {
   },
   introduction: {
     type: 'page',
-    title: 'This is Introduction',
+    title: 'This is a test',
     theme: {
       navbar: true,
       toc: false,
     },
   },
+
   examples: {
     title: 'Examples',
     type: 'page',

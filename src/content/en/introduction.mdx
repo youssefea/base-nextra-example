@@ -2,57 +2,48 @@
 title: "Introduction"
 ---
 
-import { Button } from "@/components/ui/button"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
+import { OCKWallet } from "@/components/OCKWallet"
+import { OCKEarn } from "@/components/OCKEarn"
+import { Callout } from 'nextra/components'
+import { Steps } from 'nextra/components'
 
 
 
-# Introduction
+# Test
 
-A free, open-source, and powerful Template with Next.js + Nextra + TypeScript + Tailwind CSS.
+The goal of this page is to test Nextra Built-in components and OnchainKit components.
+
+## OnchainKit Wallet
+<br/>
+
+<OCKWallet />
+## OnchainKit Earn
+<br/>
+<OCKEarn />
+
+## Code Snippets
 
 ```js
 console.log('hello, world')
 ```
+## Callouts
+<Callout type="info">
+  Don't fade Smart Wallet.
+</Callout>
 
-## Installation & Running
+<Callout type="warning" emoji="⚠️">
+  OnchainKit is based.
+</Callout>
 
-* Install dependencies
+## Steps
 
-```bash
-pnpm install
-```
-
-* Local development
-
-```bash
-pnpm run dev
-```
-
-
-<Alert>
-  <AlertTitle>Heads up!</AlertTitle>
-  <AlertDescription>
-    You can add components and dependencies to your app using the cli.
-  </AlertDescription>
-</Alert>
-
----
-
-<HoverCard>
-  <HoverCardTrigger>
-    <Button>
-      😄 Hover Me
-    </Button>
-  </HoverCardTrigger>
-  <HoverCardContent>
-    The React Framework – created and maintained by @vercel.
-  </HoverCardContent>
-</HoverCard>
-
+<Steps>
+### Step 1
+ 
+Be based.
+ 
+### Step 2
+ 
+Stay based.
+</Steps>

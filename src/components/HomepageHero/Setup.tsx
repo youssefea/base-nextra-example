@@ -1,5 +1,6 @@
 'use client'
 
+import BaseLogo from '@/assets/images/Base_Symbol_Blue.svg'
 import styles from '@/components/HomepageHero/SetupHero.module.css'
 import { MotionWrapperFlash } from '@/components/MotionWrapper/Flash'
 import { Button } from '@/components/ui/button'
@@ -7,6 +8,7 @@ import { FlipWords } from '@/components/ui/flip-words'
 import { LinkPreview } from '@/components/ui/link-preview'
 import { useLocale } from '@/hooks'
 import clsx from 'clsx'
+import Image from 'next/image'
 import Link from 'next/link'
 
 interface Props {
@@ -17,50 +19,24 @@ export function SetupHero(props: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.badgeContainer}>
-          <a
-            className={styles.badge}
-            href="https://github.com/pdsuwwz/nextjs-nextra-starter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t('badgeTitle')}
-          </a>
-        </div>
         <h1 className={styles.headline}>
           <MotionWrapperFlash
             disabledAnimation={false}
             className="flex items-center"
           >
-            <span className="icon-[emojione-v1--lightning-mood]"></span>
+            <Image src={BaseLogo} alt="Base Logo" width={100} height={100} />
           </MotionWrapperFlash>
           {' '}
+          <span className="ml-2"></span>
+          Base
+          {' '}
+          <br className="sm:hidden"></br>
+          {' '}
           Nextra
-          {' '}
           <br className="sm:hidden"></br>
           {' '}
-          Starter
-          <br className="sm:hidden"></br>
-          {' '}
-          Template
+          Example
         </h1>
-
-        <Link
-          href={`/${currentLocale}/upgrade`}
-          className={clsx([
-            'bg-linear-to-r from-yellow-400 via-orange-500 to-red-500 text-white shadow-lg',
-            'dark:bg-linear-to-r dark:from-green-400 dark:via-teal-500 dark:to-cyan-500 dark:text-white',
-            'text-sm mt-2 inline-block px-3 py-1 rounded-lg',
-            '[&>span]:font-bold',
-            'animate-pulse',
-            '[animation-duration:2s]',
-          ])}
-          dangerouslySetInnerHTML={{
-            __html: t('featureSupport', {
-              feature: `<span>Tailwind CSS v4, Nextra v4</span>`,
-            }),
-          }}
-        />
 
 
         <div className={clsx([
@@ -68,23 +44,24 @@ export function SetupHero(props: Props) {
           'text-neutral-500 dark:text-neutral-300',
         ])}
         >
-          Template made
+          Nextra is
           {' '}
           <FlipWords
             words={[
               'Fast',
-              'Simple',
+              'Based',
               'Modern',
               'Flexible',
               'Easy',
-              'Functional',
-              'Efficient',
-              'Scalable',
-              'Reusable',
             ]}
           />
           <br />
-          With
+          This is a POC and does not represent what the final product can look like.
+          <br />
+          Nextra is very rich framework and there is room for a lot of customization.
+          <br />
+          <br />
+          Made with
           {' '}
           <LinkPreview
             url="https://nextjs.org"

@@ -213,3 +213,7 @@
     cursor: pointer;
   }
 }
+
+.onchain-kit-scope {
+  @import '@coinbase/onchainkit/styles.css';
+}
