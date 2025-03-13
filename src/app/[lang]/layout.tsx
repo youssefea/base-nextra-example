@@ -120,7 +120,7 @@ export default async function RootLayout({ children, params }: Props) {
               </LastUpdated>
             )}
             editLink={null}
-            docsRepositoryBase="https://github.com/pdsuwwz/nextjs-nextra-starter"
+            docsRepositoryBase="https://github.com/youssefea/base-nextra-example"
             footer={(
               <Footer className="bg-background py-5!">
                 <CustomFooter />

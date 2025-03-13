@@ -110,7 +110,7 @@ export function SetupHero(props: Props) {
               className="font-bold group max-sm:w-[100%]"
             >
               <Link
-                href="https://github.com/pdsuwwz/nextjs-nextra-starter"
+                href="https://github.com/youssefea/base-nextra-example"
                 target="_blank"
               >
                 Github
