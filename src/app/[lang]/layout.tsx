@@ -22,7 +22,7 @@ export const metadata = {
   icons: '/img/favicon.svg',
 } satisfies Metadata
 
-const repo = 'https://github.com/pdsuwwz/nextjs-nextra-starter'
+const repo = 'https://github.com/youssefea/base-nextra-example'
 
 const CustomBanner = async ({ lang }: I18nLangAsyncProps) => {
   const { t } = await useServerLocale(lang)

@@ -1,7 +1,7 @@
 export default {
   systemTitle: '🔵 Base Nextra POC',
   banner: {
-    title: '👋 Hey there! Welcome to the Next.js Starter.',
+    title: '👋 Hey there! Welcome to this Base Nextra POC.',
     more: 'Check it out',
   },
 
