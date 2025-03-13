@@ -58,7 +58,7 @@ export function SetupHero(props: Props) {
           <br />
           This is a POC and does not represent what the final product can look like.
           <br />
-          Nextra is very rich framework and there is room for a lot of customization.
+          Nextra is a very rich framework and allows for a lot of customization.
           <br />
           <br />
           Made with

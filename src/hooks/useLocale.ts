@@ -14,11 +14,7 @@ export const useLocale = () => {
   const params = useParams()
 
   // 从 URL 参数中获取当前语言
-  const currentLocale = (
-    (params?.lang as I18nLangKeys)
-    || 'en'
-  ) as I18nLangKeys
-
+  const currentLocale = 'en' as I18nLangKeys
   const t = useCallback(
     <K extends LocaleKeys>(
       key: K,

@@ -129,7 +129,6 @@ export default async function RootLayout({ children, params }: Props) {
             search={<Search />}
             i18n={[
               { locale: 'en', name: 'English' },
-              { locale: 'zh', name: '简体中文' },
             ]}
             pageMap={pageMap}
             feedback={{ content: '' }}

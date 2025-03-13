@@ -61,7 +61,7 @@ export default function LocaleToggle({
       nextHref.value = addBasePath(pathname.replace(`/zh`, `/en`))
     }
     else {
-      nextHref.value = addBasePath(pathname.replace(`/en`, `/zh`))
+      nextHref.value = addBasePath(pathname.replace(`/en`, `/en`))
     }
 
     const date = new Date(Date.now() + ONE_YEAR)
